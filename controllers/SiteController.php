@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use app\entity\Users;
+use app\models\RegistrationForm;
+use app\repository\UserRepository;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -114,6 +117,25 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $model,
         ]);
+    }
+
+
+    public function actionRegistration(){
+
+        $model = new RegistrationForm();
+        if ($model->load(Yii::$app->request->post()) && $model->valiDate()) {
+            $userId = UserRepository::createUser(
+                $model->email,
+                $model->password,
+                $model->name
+            );
+            Yii::$app->user->login(Users::findIdentity($userId),0);
+            return $this->goBack();
+        }
+        return $this->render('registration', [
+            'model' => $model,
+        ]);
+
     }
 
     /**
