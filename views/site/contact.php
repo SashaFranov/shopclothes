@@ -33,10 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php else: ?>
 
-        <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
-            Thank you.
-        </p>
+
 
         <div class="row">
             <div class="col-lg-5">
@@ -58,6 +55,42 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="form-group">
                         <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
+
+                <section class="contact_us">
+
+                    <div class="container-xxl">
+                        <div class="row">
+                            <div class="contact_u">
+                                <h1><strong></strong></h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+
+                                <p class="down">Так же можете обратиться через телеграмм или по номеру телефона.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col align-self-start">
+                                <img src="/images/send_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <h5>https://t.me/sasha_franov</h5>
+                            </div>
+                            <div class="col align-self-center">
+                                <img src="home_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <h6>AAAKIKS</h6>
+                            </div>
+                            <div class="col align-self-end">
+                                <img src="phone_enabled_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <h6>+7(960)887-08-60</h6>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 <?php ActiveForm::end(); ?>
 

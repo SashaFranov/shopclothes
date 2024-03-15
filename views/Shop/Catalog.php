@@ -1,5 +1,5 @@
 <?php
-var_dump($shoes);
+
 ?>
 <?php foreach ($shoes as $shoe ):?>
 <h1><?=$shoe -> name ?></h1>

@@ -35,7 +35,7 @@ class Order extends \yii\db\ActiveRecord
             [['user_id'], 'default', 'value' => null],
             [['user_id'], 'integer'],
             [['ispaid'], 'boolean'],
-            [['data_ispaid'], 'safe'],
+            [['data_ispaid'], 'default'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['user_id' => 'id']],
         ];
     }

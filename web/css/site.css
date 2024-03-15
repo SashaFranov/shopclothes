@@ -82,3 +82,17 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+
+.contact_us {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    /*background: rgb(2,0,36);*/
+    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(66,66,222,0.8799894957983193) 47%, rgb(17, 100, 119) 88%);*/
+}
+
+.contact_u {
+    padding-bottom: 30px;
+    color: #000000;
+}

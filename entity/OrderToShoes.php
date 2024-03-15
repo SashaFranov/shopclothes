@@ -9,6 +9,7 @@ use Yii;
  *
  * @property int $shoes_id
  * @property int $order_id
+ * @property int $size
  *
  * @property Order $order
  * @property Shoes $shoes
