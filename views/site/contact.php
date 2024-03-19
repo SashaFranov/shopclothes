@@ -9,9 +9,10 @@ use yii\bootstrap4\Html;
 use yii\captcha\Captcha;
 
 $this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
-<div class="site-contact">
+
+<div class="site-contact ">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
@@ -77,15 +78,15 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="container text-center">
                         <div class="row">
                             <div class="col align-self-start">
-                                <img src="/images/send_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <img src="/images/about/send_FILL0_wght400_GRAD0_opsz48.png" alt="">
                                 <h5>https://t.me/sasha_franov</h5>
                             </div>
                             <div class="col align-self-center">
-                                <img src="home_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <img src="/images/about/home_FILL0_wght400_GRAD0_opsz48.png" alt="">
                                 <h6>AAAKIKS</h6>
                             </div>
                             <div class="col align-self-end">
-                                <img src="phone_enabled_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                                <img src="/images/about/phone_enabled_FILL0_wght400_GRAD0_opsz48.png" alt="">
                                 <h6>+7(960)887-08-60</h6>
                             </div>
                         </div>

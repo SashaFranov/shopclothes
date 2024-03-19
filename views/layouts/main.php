@@ -28,32 +28,37 @@ AppAsset::register($this);
 <header>
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => '1',
+        'brandImage'=>'\images\catalog\cropped-chrome_0hjdgxq9ix.webp',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
     ]);
+    $items = [
+        ['label' => 'О нас', 'url' => ['/site/about']],
+        ['label' => 'Контакты', 'url' => ['/site/contact']],
+    ];
+    if (Yii::$app->user->isGuest) {
+        $items[] = ['label' => 'Регистрация', 'url' => ['/site/registration']];
+        $items[] = ['label' => 'Login', 'url' => ['/site/login']];
+
+    }
+    else {
+        $items[] = (
+            '<li>'
+            . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->email . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>'
+        );
+    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'О нас', 'url' => ['/site/about']],
-            ['label' => 'Контакты', 'url' => ['/site/contact']],
-            ['label' => 'Регистрация', 'url' => ['/site/registration']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->email . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+        'items' => $items,
     ]);
     NavBar::end();
     ?>
