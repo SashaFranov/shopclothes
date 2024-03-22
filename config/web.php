@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'defaultRoute'=>'/shop/catalog',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -43,7 +44,9 @@ $config = [
             ],
         ],
         'db' => $db,
-
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

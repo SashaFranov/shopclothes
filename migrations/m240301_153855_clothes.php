@@ -22,6 +22,7 @@ class m240301_153855_clothes extends Migration
             'end_size' => $this->integer()->notNull(),
             'season_id' => $this->integer()->notNull(),
             'cost' => $this->float()->notNull(),
+            'description' => $this->text()->null(),
 
         ]);
 

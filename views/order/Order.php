@@ -7,14 +7,13 @@
 <?php foreach ($order->orderToShoes as $shoes ):?>
     <div class="col gy-5">
         <div class="card" style="width: 20rem;">
-            <img src="/images/catalog/img.png" class="card-img-top" alt="...">
+            <img src="/shop/image?shoes_id=<?=$shoes->shoes_id ?>&num=1" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title"><?=$shoes->shoes -> name ?></h5>
-                <p class="card-text">Преимущественно персонажа берут на сложную линии как хардлайнера или
-                    полу-саппорта. Эффективнее всего проявляет себя в середине игры..</p>
+                <p class="card-text"><?=$shoes->shoes -> description ?></p>
                 <hr>
-                <h3><?=$shoes->shoes->cost?></h3>
-                <h3><?=$shoes->size?></h3>
+                <h3><?=$shoes->shoes->cost?>₽</h3>
+                <h3>Размер:<?=$shoes->size?></h3>
 
 
             </div>

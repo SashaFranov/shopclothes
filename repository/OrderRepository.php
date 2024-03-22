@@ -33,6 +33,7 @@ class OrderRepository
     }
     public static function payOrder($order_id){
         $order = self::getOrderById($order_id);
+        $order->ispaid=true;
         $order -> data_ispaid = date('Y-m-d H:i:s');
         $order -> save();
     }

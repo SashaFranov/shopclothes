@@ -16,6 +16,7 @@ use Yii;
  * @property int $end_size
  * @property int $season_id
  * @property float $cost
+ * @property string $description
  *
  * @property DirGender $gender
  * @property DirLabel $label

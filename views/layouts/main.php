@@ -35,16 +35,31 @@ AppAsset::register($this);
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
     ]);
+
     $items = [
         ['label' => 'О нас', 'url' => ['/site/about']],
         ['label' => 'Контакты', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $items[] = ['label' => 'Регистрация', 'url' => ['/site/registration']];
-        $items[] = ['label' => 'Login', 'url' => ['/site/login']];
-
+        $items[] = ['label' => 'Авторизация', 'url' => ['/site/login']];
     }
     else {
+        if (Yii::$app->user->can('admin')) {
+            $items[] = [
+                'label' => 'Справочники',
+                'items' => [
+                    ['label' => 'Бренды', 'url' => ['/label']],
+                    ['label' => 'Типы', 'url' => ['/type']],
+                    ['label' => 'Сезоны', 'url' => ['/season']],
+                    ['label' => 'Гендеры', 'url' => ['/gender']],
+                ],
+                'options' => [
+                    'class' => 'drop-list'
+                ]
+            ];
+        }
+        $items[] = ['label' => 'Корзина', 'url' => ['/order']];
         $items[] = (
             '<li>'
             . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
