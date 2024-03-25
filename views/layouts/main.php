@@ -47,7 +47,7 @@ AppAsset::register($this);
     else {
         if (Yii::$app->user->can('admin')) {
             $items[] = [
-                'label' => 'Справочники',
+                'label' => 'Панель Администратора',
                 'items' => [
                     ['label' => 'Бренды', 'url' => ['/label']],
                     ['label' => 'Типы', 'url' => ['/type']],

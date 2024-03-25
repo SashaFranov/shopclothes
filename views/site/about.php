@@ -7,10 +7,13 @@ use yii\helpers\Html;
 $this->title = 'Почему выбирают нас?';
 
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
 
 
+
+    <img src="/images/contact/Скриншот-25-03-2024 11_18_27.jpg" alt="">
+
+    <div class="site-about">
+        <h1><?= Html::encode($this->title) ?></h1>
 
     <section>
 
@@ -88,21 +91,6 @@ $this->title = 'Почему выбирают нас?';
 
 
 
-<p>
-    О НАС
-
-    Мы продаем качество-все наши товары полностью соответствуют своим фотографиям!
-
-    У нас самые дешевые цены на самое высокое качество!
-
-    Частые скидки на все категории товаров!
-
-    Не нашли искомую модель одежды или обуви? Напишите нам в Telegram: @aaakicksroma, возможно её получится заказать у нас!
-
-    Мы предоставляем огромный ассортимент одежды и обуви доступный в наличии и под заказ, который постоянно пополняется новинками!
-
-    Розыгрыши вещей и промокодов в наших соцсетях!
-</p>
 
 
 
@@ -136,7 +124,7 @@ $this->title = 'Почему выбирают нас?';
                         <img src="/images/about/f2531ac4-305e-47d8-bfe4-f221bc1c656b.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-text">I</h5>
-                            <em><small>Player</small></em>
+                            <em><small>Admin</small></em>
                             <hr>
                         </div>
                     </div>
@@ -146,7 +134,7 @@ $this->title = 'Почему выбирают нас?';
                         <img src="/images/about/da15a5d1-1197-44e3-8b36-fba7a8c8dbd8.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-text">Misha</h5>
-                            <em><small>Noob</small></em>
+                            <em><small>Logist</small></em>
                             <hr>
                         </div>
                     </div>

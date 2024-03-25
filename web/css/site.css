@@ -102,3 +102,283 @@ a.desc:after {
 .navbar-brand img{
     width: 65%;
 }
+
+
+
+
+
+
+
+
+/**/
+
+
+.about {
+    padding-bottom: 20px;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.about_us {
+
+    padding-bottom: 100px;
+    background-image: url("//images/about/large_магазин_одежда_3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+
+
+    background-blend-mode: overlay;
+    display: grid;
+    place-items: center;
+    min-height: 600px;
+    text-align: center;
+    padding-top: 125px;
+
+}
+
+.our_works {
+    padding-top: 80px;
+    background: #dedede;
+}
+
+.colons {
+    background: #dedede;
+}
+
+card {
+    margin-top: 120px;
+}
+
+.main_mix_menu {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+section {
+    padding-bottom: 10PX;
+}
+
+.back {
+    background-image: url("b7cd946ebb19f28855947ff043efc1d4_h-20.jpg");
+}
+
+.card {
+    background: #ffffff;
+    --bs-card-border-width: 0;
+    margin: 0 auto; /* для центра */
+    float: none; /* для центра */
+    margin-bottom: 10px; /* для центра */
+    --bs-card-border-radius: 3em;
+}
+
+.more {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.why_shoose_us {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding-top: 40px;
+}
+
+.ny {
+    height: 100vh;
+}
+
+/* Container holding the image and the text */
+.ny {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.centered {
+    position: absolute;
+    top: 130px;
+    left: 50em;
+}
+
+.centered > h1 {
+    font-size: 40px;
+}
+
+.rightimg {
+    float: left;
+}
+
+.our_team {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    /*background: rgb(2,0,36);*/
+    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(66,66,222,0.8799894957983193) 47%, rgb(17, 100, 119) 88%);*/
+}
+
+.our_t {
+    padding-bottom: 30px;
+    color: #000000;
+}
+
+.our_skills {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.our_skill {
+    padding-bottom: 50px;
+}
+
+.skillbar {
+    background: red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 30%;
+}
+
+.skillbar_1 {
+    background:red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 35%;
+}
+
+.skillbar_2 {
+    background: red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 65%;
+}
+
+.skillbar_3 {
+    background: red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 30%;
+}
+
+.skillbar_4 {
+    background: red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 35%;
+}
+
+.skillbar_5 {
+    background: red;
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 60%;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 12px;
+    left: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.skillbar-title h3 {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#brands {
+    padding-top: 50px;
+}
+
+input {
+    margin: auto;
+}
+
+.form-control {
+    width: 45%;
+    text-align: center;
+    border-radius: 33px;
+    background-color: gray;
+    color: green;
+    font-size: 20px;
+    border: 0;
+}
+
+textarea.form-control {
+    min-height: calc(1.5em + 0.75rem + 2px);
+    margin: auto;
+}
+
+input::placeholder {
+    font-weight: bold;
+}
+
+.thank_you {
+    background: #cecece;
+}
+
+.contact_us {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    /*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(66,66,222,0.8799894957983193) 47%, rgb(17, 100, 119) 88%);*/
+}
+
+.contact_u {
+    padding-bottom: 40px;
+    /*color: #000000;*/
+}
+
+.down {
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
